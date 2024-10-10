@@ -41,8 +41,8 @@ export default function Nav() {
 
       {isMenuOpen? (
         <ul className='flex flex-col'>
-          <li className='py-2'><a href='/' className='text-black pl-4'>Finger Pain</a></li>
-          <li className='py-2'><a href='/abdominal-pain' className='text-black pl-4'>Abdominal Pain</a></li>
+          <li className='py-2'><Link to='/' className='text-black pl-4'>Finger Pain</Link></li>
+          <li className='py-2'><Link to='/abdominal-pain' className='text-black pl-4'>Abdominal Pain</Link></li>
         </ul>
       ) : null}
       
