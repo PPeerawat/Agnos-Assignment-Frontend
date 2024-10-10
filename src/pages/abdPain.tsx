@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { 
-    defaultAbdominal,
+    defaultPictures,
     abdominalActive,
     abdominalHighlight,
 } from '../assets/pictures'
@@ -49,6 +49,7 @@ export default function AbdominalPain() {
   }
 
   const selectPain = (index: number) => {
+    setAllPain(false)
     if(index === 0){
       if(epigastriumHighlight && llqHighlight && luqHighlight && rlqHighlight && ruqHighlight && suprapubicHighlight && umbilicusHighlight){
         setEpigastriumActive(false)
@@ -171,7 +172,7 @@ export default function AbdominalPain() {
     <div className='flex items-center justify-center w-full h-auto'>
         <div className='flex relative'>
             <div className='flex justify-center items-center'>
-                <img src={defaultAbdominal} alt='default-abdominal' />
+                <img src={defaultPictures.defaultAbdominal} alt='default-abdominal' style={{height: '500px'}}  />
 
                 {/* active */}
                 {epigastriumActive ? (
@@ -279,8 +280,8 @@ export default function AbdominalPain() {
                     {abdominalPoint.map((button, index) => (
                         <button 
                             key={index} 
-                            className='absolute opacity-0 bg-blue-200 px-4 py-2 z-50' 
-                            style={{ top: button.top, left: button.left, width: 100, height: 80, borderRadius: 200 }}
+                            className='absolute bg-blue-200 px-5 py-2 z-50 rounded-3xl opacity-0' 
+                            style={{ top: button.top, left: button.left}}
                             onClick={() => selectPain(index)}
                         >
                             {index}

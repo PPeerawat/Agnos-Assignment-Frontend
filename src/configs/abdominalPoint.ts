@@ -1,16 +1,16 @@
 export const abdominalPoint = [
     //epigastrium
-    { top: '360px', left: '350px' },
+    { top: '183px', left: '180px' },
     //llq
-    { top: '530px', left: '440px' },
+    { top: '270px', left: '225px' },
     //luq
-    { top: '420px', left: '440px' },
+    { top: '217px', left: '225px' },
     //rlq
-    { top: '530px', left: '265px' },
+    { top: '270px', left: '135px' },
     //ruq
-    { top: '420px', left: '265px' },
+    { top: '217px', left: '135px' },
     //suprapubic
-    { top: '590px', left: '350px' },
+    { top: '300px', left: '180px' },
     //umbilicus
-    { top: '475px', left: '350px' },
+    { top: '245px', left: '180px' },
 ]

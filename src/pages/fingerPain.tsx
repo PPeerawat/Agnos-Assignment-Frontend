@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { 
-    defaultFinger,
+    defaultPictures,
     fingerActive,
     fingerHighlight,
 } from '../assets/pictures'
@@ -27,7 +27,7 @@ export default function FingerPain() {
     setMcpHighlight(false)
     setOtherPain(!otherPain)
     
-}
+  }
   const selectPain = (index: number) => {
     setOtherPain(false)
     if(index >= 0 && index <= 3){
@@ -72,7 +72,7 @@ export default function FingerPain() {
     <div className='flex items-center justify-center w-full h-auto'>
         <div className='flex relative'>
             <div className='flex justify-center items-center'>
-                <img src={defaultFinger} alt='default-finger' />
+                <img src={defaultPictures.defaultFinger} alt='default-finger'   style={{height: '500px'}} />
 
                 {/* dip */}
                 {dipActive ? (
@@ -123,7 +123,7 @@ export default function FingerPain() {
                     {fingerPoint.map((button, index) => (
                         <button 
                             key={index} 
-                            className='absolute opacity-0 bg-blue-200 px-4 py-2 z-50 rounded-3xl' 
+                            className='absolute opacity-0 bg-blue-200 px-3 z-50 rounded-3xl' 
                             style={{ top: button.top, left: button.left }}
                             onClick={() => selectPain(index)}
                         >

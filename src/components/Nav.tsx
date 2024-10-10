@@ -9,7 +9,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className='p-4 bg-blue-300'>
+    <nav className='p-4 bg-blue-300 w-full'>
       <div className="flex items-center justify-between">
         <div className='text-black text-2xl font-bold'>Agnos</div>
 
@@ -41,8 +41,8 @@ export default function Nav() {
 
       {isMenuOpen? (
         <ul className='flex flex-col'>
-          <li className='py-2'><a href='#' className='text-black pl-4'>Finger Pain</a></li>
-          <li className='py-2'><a href='#' className='text-black pl-4'>Abdominal Pain</a></li>
+          <li className='py-2'><a href='/' className='text-black pl-4'>Finger Pain</a></li>
+          <li className='py-2'><a href='/abdominal-pain' className='text-black pl-4'>Abdominal Pain</a></li>
         </ul>
       ) : null}
       

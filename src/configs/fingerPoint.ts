@@ -1,19 +1,19 @@
 export const fingerPoint = [
     //dips finger
-    { top: '230px', left: '175px' },
-    { top: '130px', left: '275px' },
-    { top: '85px', left: '365px' },
-    { top: '110px', left: '465px' },
+    { top: '115px', left: '85px' },
+    { top: '60px', left: '135px' },
+    { top: '40px', left: '180px' },
+    { top: '55px', left: '233px' },
     //pips finger
-    { top: '305px', left: '205px' },
-    { top: '230px', left: '285px' },
-    { top: '195px', left: '373px' },
-    { top: '210px', left: '465px' },
-    { top: '400px', left: '640px' },
+    { top: '155px', left: '100px' },
+    { top: '115px', left: '140px' },
+    { top: '95px', left: '185px' },
+    { top: '105px', left: '233px' },
+    { top: '205px', left: '320px' },
     //mcp finger
-    { top: '400px', left: '240px' },
-    { top: '365px', left: '305px' },
-    { top: '345px', left: '380px' },
-    { top: '345px', left: '455px' },
-    { top: '515px', left: '570px' },
+    { top: '202px', left: '117px' },
+    { top: '185px', left: '147px' },
+    { top: '175px', left: '185px' },
+    { top: '175px', left: '230px' },
+    { top: '260px', left: '285px' },
 ]
