@@ -131,10 +131,13 @@ export default function FingerPain() {
                         </button>
                     ))}
                 </div>
-                <div className='absolute flex z-10 opacity-0' style={{bottom: 20, width: 600}}>
+                <div className='absolute flex z-10 opacity-0' style={{bottom: '5px'}}>
                     <button
-                        className='bg-blue-200 px-10 py-6 z-50 rounded-3xl w-full'
+                        className='bg-blue-200 px-10 py-3 z-50 rounded-3xl'
                         onClick={handleClickOtherPain}
+                        style={{
+                            width: '300px'
+                        }}
                     >
                         other point
                     </button>

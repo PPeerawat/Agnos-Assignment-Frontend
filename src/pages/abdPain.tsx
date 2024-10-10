@@ -288,9 +288,9 @@ export default function AbdominalPain() {
                         </button>
                     ))}
                 </div>
-                <div className='absolute flex z-10 opacity-0' style={{bottom: 20, width: 600}}>
+                <div className='absolute flex z-10 opacity-0' style={{bottom: 20}}>
                     <button
-                        className='bg-blue-200 px-10 py-6 z-50 rounded-3xl w-full'
+                        className='bg-blue-200 px-12 py-3 z-50 rounded-3xl w-full'
                         onClick={handleClickAllPain}
                     >
                         all point
