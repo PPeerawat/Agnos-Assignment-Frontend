@@ -34,7 +34,7 @@ export default function Nav() {
         </div>
 
         <ul className='hidden md:flex space-x-4'>
-            <li><Link to='/finger-pain' className='text-black pl-4'>Finger Pain</Link></li>
+            <li><Link to='/' className='text-black pl-4'>Finger Pain</Link></li>
             <li><Link to='/abdominal-pain' className='text-black pl-4'>Abdominal Pain</Link></li>
         </ul>
       </div>

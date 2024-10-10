@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path='/finger-pain' element={<FingerPain />}/>
+        <Route path='/' element={<FingerPain />}/>
         <Route path='/abdominal-pain' element={<AbdominalPain />}/>
       </Routes>
     </Router>
