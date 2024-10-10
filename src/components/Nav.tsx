@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Nav() {
@@ -39,8 +39,8 @@ export default function Nav() {
         </ul>
       </div>
 
-      {isMenuOpen? (
-        <ul className='flex flex-col'>
+      {isMenuOpen ? (
+        <ul className={`flex flex-col md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <li className='py-2'><Link to='/' className='text-black pl-4'>Finger Pain</Link></li>
           <li className='py-2'><Link to='/abdominal-pain' className='text-black pl-4'>Abdominal Pain</Link></li>
         </ul>
