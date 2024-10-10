@@ -169,142 +169,147 @@ export default function AbdominalPain() {
   }, [epigastriumHighlight, llqHighlight, luqHighlight, rlqHighlight, ruqHighlight, suprapubicHighlight, umbilicusHighlight])
 
   return (
-    <div className='flex items-center justify-center w-full h-auto'>
-        <div className='flex relative'>
-            <div className='flex justify-center items-center'>
-                <img src={defaultPictures.defaultAbdominal} alt='default-abdominal' style={{height: '500px'}}  />
+    <>
+      <div className='flex items-center justify-center py-4 text-xl'>
+          จุดไหนที่คุณปวดท้องมากที่สุด
+      </div>
+      <div className='flex items-center justify-center w-full h-auto'>
+          <div className='flex relative'>
+              <div className='flex justify-center items-center'>
+                  <img src={defaultPictures.defaultAbdominal} alt='default-abdominal' style={{height: '500px'}}  />
 
-                {/* active */}
-                {epigastriumActive ? (
-                    <img
-                        src={abdominalActive.epigastriumActive}
-                        alt='epigastrium-active'
-                        className='absolute'
-                    />
-                ): null}
-                {llqActive ? (
-                    <img
-                        src={abdominalActive.llqActive}
-                        alt='llq-active'
-                        className='absolute'
-                    />
-                ): null}
-                {luqActive ? (
-                    <img
-                        src={abdominalActive.luqActive}
-                        alt='luq-active'
-                        className='absolute'
-                    />
-                ): null}
-                {rlqActive ? (
-                    <img
-                        src={abdominalActive.rlqActive}
-                        alt='rlq-active'
-                        className='absolute'
-                    />
-                ): null}
-                {ruqActive ? (
-                    <img
-                        src={abdominalActive.ruqActive}
-                        alt='ruq-active'
-                        className='absolute'
-                    />
-                ): null}
-                {suprapubicActive ? (
-                    <img
-                        src={abdominalActive.suprapubicActive}
-                        alt='suprapubic-active'
-                        className='absolute'
-                    />
-                ): null}
-                {umbilicusActive ? (
-                    <img
-                        src={abdominalActive.umbilicusActive}
-                        alt='umbilicus-active'
-                        className='absolute'
-                    />
-                ): null}
+                  {/* active */}
+                  {epigastriumActive ? (
+                      <img
+                          src={abdominalActive.epigastriumActive}
+                          alt='epigastrium-active'
+                          className='absolute'
+                      />
+                  ): null}
+                  {llqActive ? (
+                      <img
+                          src={abdominalActive.llqActive}
+                          alt='llq-active'
+                          className='absolute'
+                      />
+                  ): null}
+                  {luqActive ? (
+                      <img
+                          src={abdominalActive.luqActive}
+                          alt='luq-active'
+                          className='absolute'
+                      />
+                  ): null}
+                  {rlqActive ? (
+                      <img
+                          src={abdominalActive.rlqActive}
+                          alt='rlq-active'
+                          className='absolute'
+                      />
+                  ): null}
+                  {ruqActive ? (
+                      <img
+                          src={abdominalActive.ruqActive}
+                          alt='ruq-active'
+                          className='absolute'
+                      />
+                  ): null}
+                  {suprapubicActive ? (
+                      <img
+                          src={abdominalActive.suprapubicActive}
+                          alt='suprapubic-active'
+                          className='absolute'
+                      />
+                  ): null}
+                  {umbilicusActive ? (
+                      <img
+                          src={abdominalActive.umbilicusActive}
+                          alt='umbilicus-active'
+                          className='absolute'
+                      />
+                  ): null}
 
-                {/* Highlight */}
-                {epigastriumHighlight ? (
-                    <img
-                        src={abdominalHighlight.epigastriumHighlight}
-                        alt='epigastrium-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {llqHighlight ? (
-                    <img
-                        src={abdominalHighlight.llqHighlight}
-                        alt='llq-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {luqHighlight ? (
-                    <img
-                        src={abdominalHighlight.luqHighlight}
-                        alt='luq-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {rlqHighlight ? (
-                    <img
-                        src={abdominalHighlight.rlqHighlight}
-                        alt='rlq-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {ruqHighlight ? (
-                    <img
-                        src={abdominalHighlight.ruqHighlight}
-                        alt='ruq-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {suprapubicHighlight ? (
-                    <img
-                        src={abdominalHighlight.suprapubicHighlight}
-                        alt='suprapubic-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {umbilicusHighlight ? (
-                    <img
-                        src={abdominalHighlight.umbilicusHighlight}
-                        alt='umbilicus-highlight'
-                        className='absolute'
-                    />
-                ): null}
+                  {/* Highlight */}
+                  {epigastriumHighlight ? (
+                      <img
+                          src={abdominalHighlight.epigastriumHighlight}
+                          alt='epigastrium-highlight'
+                          className='absolute'
+                      />
+                  ): null}
+                  {llqHighlight ? (
+                      <img
+                          src={abdominalHighlight.llqHighlight}
+                          alt='llq-highlight'
+                          className='absolute'
+                      />
+                  ): null}
+                  {luqHighlight ? (
+                      <img
+                          src={abdominalHighlight.luqHighlight}
+                          alt='luq-highlight'
+                          className='absolute'
+                      />
+                  ): null}
+                  {rlqHighlight ? (
+                      <img
+                          src={abdominalHighlight.rlqHighlight}
+                          alt='rlq-highlight'
+                          className='absolute'
+                      />
+                  ): null}
+                  {ruqHighlight ? (
+                      <img
+                          src={abdominalHighlight.ruqHighlight}
+                          alt='ruq-highlight'
+                          className='absolute'
+                      />
+                  ): null}
+                  {suprapubicHighlight ? (
+                      <img
+                          src={abdominalHighlight.suprapubicHighlight}
+                          alt='suprapubic-highlight'
+                          className='absolute'
+                      />
+                  ): null}
+                  {umbilicusHighlight ? (
+                      <img
+                          src={abdominalHighlight.umbilicusHighlight}
+                          alt='umbilicus-highlight'
+                          className='absolute'
+                      />
+                  ): null}
 
-                <div>
-                    {abdominalPoint.map((button, index) => (
-                        <button 
-                            key={index} 
-                            className='absolute bg-blue-200 px-5 py-2 z-50 rounded-3xl opacity-0' 
-                            style={{ top: button.top, left: button.left}}
-                            onClick={() => selectPain(index)}
-                        >
-                            {index}
-                        </button>
-                    ))}
-                </div>
-                <div className='absolute flex z-10 opacity-0' style={{bottom: 20}}>
-                    <button
-                        className='bg-blue-200 px-12 py-3 z-50 rounded-3xl w-full'
-                        onClick={handleClickAllPain}
-                    >
-                        all point
-                    </button>
-                </div>
-                {allPain ? (
-                    <img
-                        src={abdominalHighlight.allOverHighlight}
-                        alt='all-over-highlight'
-                        className='absolute'
-                    />
-                ): null}
-            </div>
-        </div>
-    </div>
+                  <div>
+                      {abdominalPoint.map((button, index) => (
+                          <button 
+                              key={index} 
+                              className='absolute bg-blue-200 px-5 py-2 z-50 rounded-3xl opacity-0' 
+                              style={{ top: button.top, left: button.left}}
+                              onClick={() => selectPain(index)}
+                          >
+                              {index}
+                          </button>
+                      ))}
+                  </div>
+                  <div className='absolute flex z-10 opacity-0' style={{bottom: 20}}>
+                      <button
+                          className='bg-blue-200 px-12 py-3 z-50 rounded-3xl w-full'
+                          onClick={handleClickAllPain}
+                      >
+                          all point
+                      </button>
+                  </div>
+                  {allPain ? (
+                      <img
+                          src={abdominalHighlight.allOverHighlight}
+                          alt='all-over-highlight'
+                          className='absolute'
+                      />
+                  ): null}
+              </div>
+          </div>
+      </div>
+    </>
   )
 }

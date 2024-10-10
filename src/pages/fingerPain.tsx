@@ -69,88 +69,93 @@ export default function FingerPain() {
   }, [dipHighlight, pipHighlight, mcpHighlight])
 
   return (
-    <div className='flex items-center justify-center w-full h-auto'>
-        <div className='flex relative'>
-            <div className='flex justify-center items-center'>
-                <img src={defaultPictures.defaultFinger} alt='default-finger'   style={{height: '500px'}} />
+    <>
+        <div className='flex items-center justify-center py-4 text-xl'>
+            จุดไหนที่คุณปวดนิ้วมากที่สุด
+        </div>
+        <div className='flex items-center justify-center w-full h-auto'>
+            <div className='flex relative'>
+                <div className='flex justify-center items-center'>
+                    <img src={defaultPictures.defaultFinger} alt='default-finger'   style={{height: '500px'}} />
 
-                {/* dip */}
-                {dipActive ? (
-                    <img
-                        src={fingerActive.dipActive}
-                        alt='dip-active'
-                        className='absolute'
-                    />
-                ): null}
-                {pipActive ? (
-                    <img
-                        src={fingerActive.pipActive}
-                        alt='pip-active'
-                        className='absolute'
-                    />
-                ): null}
-                {mcpActive ? (
-                    <img
-                        src={fingerActive.mcpActive}
-                        alt='mcp-active'
-                        className='absolute'
-                    />
-                ): null}
+                    {/* dip */}
+                    {dipActive ? (
+                        <img
+                            src={fingerActive.dipActive}
+                            alt='dip-active'
+                            className='absolute'
+                        />
+                    ): null}
+                    {pipActive ? (
+                        <img
+                            src={fingerActive.pipActive}
+                            alt='pip-active'
+                            className='absolute'
+                        />
+                    ): null}
+                    {mcpActive ? (
+                        <img
+                            src={fingerActive.mcpActive}
+                            alt='mcp-active'
+                            className='absolute'
+                        />
+                    ): null}
 
-                {/* Highlight */}
-                {dipHighlight ? (
-                    <img
-                        src={fingerHighlight.dipHighlight}
-                        alt='dip-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {pipHighlight ? (
-                    <img
-                        src={fingerHighlight.pipHighlight}
-                        alt='pip-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                {mcpHighlight ? (
-                    <img
-                        src={fingerHighlight.mcpHighlight}
-                        alt='mcp-highlight'
-                        className='absolute'
-                    />
-                ): null}
-                <div>
-                    {fingerPoint.map((button, index) => (
-                        <button 
-                            key={index} 
-                            className='absolute opacity-0 bg-blue-200 px-3 z-50 rounded-3xl' 
-                            style={{ top: button.top, left: button.left }}
-                            onClick={() => selectPain(index)}
+                    {/* Highlight */}
+                    {dipHighlight ? (
+                        <img
+                            src={fingerHighlight.dipHighlight}
+                            alt='dip-highlight'
+                            className='absolute'
+                        />
+                    ): null}
+                    {pipHighlight ? (
+                        <img
+                            src={fingerHighlight.pipHighlight}
+                            alt='pip-highlight'
+                            className='absolute'
+                        />
+                    ): null}
+                    {mcpHighlight ? (
+                        <img
+                            src={fingerHighlight.mcpHighlight}
+                            alt='mcp-highlight'
+                            className='absolute'
+                        />
+                    ): null}
+                    <div>
+                        {fingerPoint.map((button, index) => (
+                            <button 
+                                key={index} 
+                                className='absolute opacity-0 bg-blue-200 px-3 z-50 rounded-3xl' 
+                                style={{ top: button.top, left: button.left }}
+                                onClick={() => selectPain(index)}
+                            >
+                                {index}
+                            </button>
+                        ))}
+                    </div>
+                    <div className='absolute flex z-10 opacity-0' style={{bottom: '5px'}}>
+                        <button
+                            className='bg-blue-200 px-10 py-3 z-50 rounded-3xl'
+                            onClick={handleClickOtherPain}
+                            style={{
+                                width: '300px'
+                            }}
                         >
-                            {index}
+                            other point
                         </button>
-                    ))}
+                    </div>
+                    {otherPain ? (
+                        <img
+                            src={fingerHighlight.othersHighlight}
+                            alt='others-highlight'
+                            className='absolute'
+                        />
+                    ): null}
                 </div>
-                <div className='absolute flex z-10 opacity-0' style={{bottom: '5px'}}>
-                    <button
-                        className='bg-blue-200 px-10 py-3 z-50 rounded-3xl'
-                        onClick={handleClickOtherPain}
-                        style={{
-                            width: '300px'
-                        }}
-                    >
-                        other point
-                    </button>
-                </div>
-                {otherPain ? (
-                    <img
-                        src={fingerHighlight.othersHighlight}
-                        alt='others-highlight'
-                        className='absolute'
-                    />
-                ): null}
             </div>
         </div>
-    </div>
+    </>
   )
 }
